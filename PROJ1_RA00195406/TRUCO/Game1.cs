@@ -269,6 +269,7 @@ namespace TRUCO
 
             switch (estadoJogo)
             {
+                #region Menu
                 case EstadoJogo.MENU:
                     {
                         #region BOTAO PLAY
@@ -334,6 +335,8 @@ namespace TRUCO
                         #endregion
                         break;
                     }
+                #endregion
+                #region About
                 case EstadoJogo.ABOUT:
                     {
                         #region FOTO PERFIL CLIQUE
@@ -406,6 +409,8 @@ namespace TRUCO
                         #endregion
                         break;
                     }
+                #endregion
+                #region Help
                 case EstadoJogo.HELP:
                     {
                         #region BOTAO MENU
@@ -425,6 +430,8 @@ namespace TRUCO
                         #endregion
                         break;
                     }
+                #endregion
+                #region PlayGame
                 case EstadoJogo.PLAYGAME:
                     {
 
@@ -504,6 +511,7 @@ namespace TRUCO
                         }
                         break;
                     }
+                    #endregion
             }
             base.Update(gameTime);
         }
