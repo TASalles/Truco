@@ -24,10 +24,10 @@ namespace TRUCO
             get { return colunas; }
         }
 
-        public int numeroDePares
+        /*public int numeroDePares
         {
             get { return (linhas * colunas / 2); }
-        }
+        }*/
 
         public Carta GetCarta(int lin, int col)
         {
@@ -41,6 +41,7 @@ namespace TRUCO
             }
             return carta;
         }
+
         #endregion
 
         public Tabuleiro(int numLin, int numCol)
@@ -55,17 +56,15 @@ namespace TRUCO
         {
             bool ok = false;
 
-            if ((lin >= 0 && lin < linhas) &&
-                (colunas >= 0 && col < colunas)
-                )
+            if ((lin >= 0 && lin < linhas) && (colunas >= 0 && col < colunas))
             {
+                //if ((lin != 1 && col != 0) || (lin != 1 && col !=2))
                 if (tab[lin, col] == null)
                 {
                     tab[lin, col] = carta;
                     ok = true;
                 }
             }
-
             return ok;
         }
         #endregion

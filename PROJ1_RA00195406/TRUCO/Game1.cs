@@ -103,9 +103,14 @@ namespace TRUCO
             texPLAY2 = Content.Load<Texture2D>("MENU_ART/botaoPLAY2");
             texHELP1 = Content.Load<Texture2D>("MENU_ART/botaoHELP1");
             texHELP2 = Content.Load<Texture2D>("MENU_ART/botaoHELP2");
-            //logoMaze = Content.Load<Texture2D>("Maze");
-            //versoCartaTex = Content.Load<Texture2D>("VersoCarta");
-            //frenteCartaTex = Content.Load<Texture2D>("FrenteCarta");
+            
+            versoCartaTex = Content.Load<Texture2D>("CARTAS_ART/fundo_carta"); //TROCAR IMAGEM DE FUNDO DAS CARTAS
+            
+            /*for (int i = 1; i<40; i++)
+            {
+                listaCartas[i] = Content.Load<Texture2D>("CARTAS_ART/" + i);
+                //listaCartas.Add();
+            }*/
 
             carta1Text = Content.Load<Texture2D>("CARTAS_ART/Azul_1");
             listaCartas.Add(carta1Text);
@@ -190,7 +195,7 @@ namespace TRUCO
             listaCartas.Add(carta39Text);
             carta40Text = Content.Load<Texture2D>("CARTAS_ART/Cinza_10");
             listaCartas.Add(carta40Text);
-
+            
 
             fonteHead = Content.Load<SpriteFont>("fonteHead");
             fonteTitulo = Content.Load<SpriteFont>("fonteTitulo");
@@ -251,7 +256,6 @@ namespace TRUCO
             //ESTADOS DO MOUSE
 
             varTexture = Unselected;
-            //varPablito = perfilPablito1;
             varLogo = Void;
             varPLAY = texPLAY1;
             varHELP = texHELP1;
@@ -269,7 +273,6 @@ namespace TRUCO
 
             switch (estadoJogo)
             {
-                #region Menu
                 case EstadoJogo.MENU:
                     {
                         #region BOTAO PLAY
@@ -335,8 +338,6 @@ namespace TRUCO
                         #endregion
                         break;
                     }
-                #endregion
-                #region About
                 case EstadoJogo.ABOUT:
                     {
                         #region FOTO PERFIL CLIQUE
@@ -409,8 +410,6 @@ namespace TRUCO
                         #endregion
                         break;
                     }
-                #endregion
-                #region Help
                 case EstadoJogo.HELP:
                     {
                         #region BOTAO MENU
@@ -430,13 +429,11 @@ namespace TRUCO
                         #endregion
                         break;
                     }
-                #endregion
-                #region PlayGame
                 case EstadoJogo.PLAYGAME:
                     {
 
 
-                        if (tempoPausaInteracao == 0)
+                        /*if (tempoPausaInteracao == 0)
                         {
 
                             if (meuMouse.LeftButton == ButtonState.Released && meuMouseAnterior.LeftButton == ButtonState.Pressed)
@@ -492,7 +489,7 @@ namespace TRUCO
                         {
                             tempoPausaInteracao--;
                         }
-
+                        */
 
                         if (mousePosicao.X >= 250 && mousePosicao.X <= 250 + 300 && mousePosicao.Y >= 420 && mousePosicao.Y <= 420 + 50)
                         {
@@ -511,7 +508,6 @@ namespace TRUCO
                         }
                         break;
                     }
-                    #endregion
             }
             base.Update(gameTime);
         }
@@ -572,7 +568,7 @@ namespace TRUCO
                     }
                 case EstadoJogo.PLAYGAME:
                     {
-                        //DrawObjetos.Tabuleiro(tabuleiro, spriteBatch, versoCartaTex, listaCartas, fonteTexto);
+                        DrawObjetos.Tabuleiro(tabuleiro, spriteBatch, versoCartaTex, listaCartas, fonteTexto);
                         DrawObjetos.Botao(botaoMENU, spriteBatch, varMENU, fonteTexto);
                         break;
                     }

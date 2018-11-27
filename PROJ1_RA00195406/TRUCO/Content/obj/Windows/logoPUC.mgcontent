@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/ra00195406/Desktop/Nova pasta/Truco/PROJ1_RA00195406/TRUCO/Content/logoPUC.png</SourceFile>
-  <SourceTime>2018-11-22T08:46:40.049609-02:00</SourceTime>
-  <DestFile>C:/Users/ra00195406/Desktop/Nova pasta/Truco/PROJ1_RA00195406/TRUCO/Content/bin/Windows/logoPUC.xnb</DestFile>
-  <DestTime>2018-11-22T08:51:38.3010725-02:00</DestTime>
+  <SourceFile>C:/Users/ra00170606/Downloads/Truco-thefiant-patch-2/Truco-thefiant-patch-2/PROJ1_RA00195406/TRUCO/Content/logoPUC.png</SourceFile>
+  <SourceTime>2018-03-03T20:53:16.7830661-03:00</SourceTime>
+  <DestFile>C:/Users/ra00170606/Downloads/Truco-thefiant-patch-2/Truco-thefiant-patch-2/PROJ1_RA00195406/TRUCO/Content/bin/Windows/logoPUC.xnb</DestFile>
+  <DestTime>2018-11-27T11:13:56.8904275-02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T12:05:36-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

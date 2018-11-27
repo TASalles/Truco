@@ -9,7 +9,7 @@ namespace TRUCO
 {
     class FabricarTabuleiros
     {
-        public static Tabuleiro Mazemoria(List<Texture2D> textura)
+        /*public static Tabuleiro Mazemoria(List<Texture2D> textura)
         {
             Tabuleiro tabuleiro = new Tabuleiro(2, 10);
             List<Carta> baralho = new List<Carta>();
@@ -27,28 +27,26 @@ namespace TRUCO
             distribuirCartas(baralho, tabuleiro);
 
             return tabuleiro;
-        }
+        }*/
 
         public static Tabuleiro Truco(List<Texture2D> textura)
         {
-            Tabuleiro tabuleiro = new Tabuleiro(3, 4);
+            Tabuleiro tabuleiro = new Tabuleiro(3, 3);
             List<Carta> baralho = new List<Carta>();
-            Carta carta1;
-            Carta carta2;
+            Carta[] carta;
+            carta = new Carta[40];
 
-            for (int num = 0; num < 10; num++)
+            for (int num = 0; num < 40; num++)
             {
-                carta1 = new Carta(textura[num], num);
-                carta2 = new Carta(textura[num], num);
-                baralho.Add(carta1);
-                baralho.Add(carta2);
+                carta[num] = new Carta(textura[num], num);
+                baralho.Add(carta[num]);
             }
 
             distribuirCartas(baralho, tabuleiro);
 
             return tabuleiro;
         }
-
+        
         private static void distribuirCartas(List<Carta> baralho, Tabuleiro tabuleiro)
         {
             Random rnd = new Random();

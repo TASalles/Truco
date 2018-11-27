@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/ra00195406/Desktop/Nova pasta/Truco/PROJ1_RA00195406/TRUCO/Content/CARTAS_ART/cinza_8.png</SourceFile>
-  <SourceTime>2018-11-22T08:46:39.8062838-02:00</SourceTime>
-  <DestFile>C:/Users/ra00195406/Desktop/Nova pasta/Truco/PROJ1_RA00195406/TRUCO/Content/bin/Windows/CARTAS_ART/cinza_8.xnb</DestFile>
-  <DestTime>2018-11-22T08:51:35.6312723-02:00</DestTime>
+  <SourceFile>C:/Users/ra00170606/Downloads/Truco-thefiant-patch-2/Truco-thefiant-patch-2/PROJ1_RA00195406/TRUCO/Content/CARTAS_ART/cinza_8.png</SourceFile>
+  <SourceTime>2018-11-22T09:05:04-02:00</SourceTime>
+  <DestFile>C:/Users/ra00170606/Downloads/Truco-thefiant-patch-2/Truco-thefiant-patch-2/PROJ1_RA00195406/TRUCO/Content/bin/Windows/CARTAS_ART/cinza_8.xnb</DestFile>
+  <DestTime>2018-11-27T11:13:58.4576794-02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T12:05:36-03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
