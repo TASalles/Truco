@@ -103,7 +103,9 @@ namespace TRUCO
             texPLAY2 = Content.Load<Texture2D>("MENU_ART/botaoPLAY2");
             texHELP1 = Content.Load<Texture2D>("MENU_ART/botaoHELP1");
             texHELP2 = Content.Load<Texture2D>("MENU_ART/botaoHELP2");
-            
+            //logoMaze = Content.Load<Texture2D>("Maze");
+            //frenteCartaTex = Content.Load<Texture2D>("FrenteCarta");
+
             versoCartaTex = Content.Load<Texture2D>("CARTAS_ART/fundo_carta"); //TROCAR IMAGEM DE FUNDO DAS CARTAS
             
             /*for (int i = 1; i<40; i++)
@@ -256,6 +258,7 @@ namespace TRUCO
             //ESTADOS DO MOUSE
 
             varTexture = Unselected;
+            //varPablito = perfilPablito1;
             varLogo = Void;
             varPLAY = texPLAY1;
             varHELP = texHELP1;
@@ -433,7 +436,7 @@ namespace TRUCO
                     {
 
 
-                        /*if (tempoPausaInteracao == 0)
+                        if (tempoPausaInteracao == 0)
                         {
 
                             if (meuMouse.LeftButton == ButtonState.Released && meuMouseAnterior.LeftButton == ButtonState.Pressed)
@@ -489,7 +492,7 @@ namespace TRUCO
                         {
                             tempoPausaInteracao--;
                         }
-                        */
+
 
                         if (mousePosicao.X >= 250 && mousePosicao.X <= 250 + 300 && mousePosicao.Y >= 420 && mousePosicao.Y <= 420 + 50)
                         {

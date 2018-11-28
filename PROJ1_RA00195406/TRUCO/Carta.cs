@@ -43,7 +43,7 @@ namespace TRUCO
         #endregion
 
 
-        public Carta(Texture2D tex, int val)
+        public Carta(Texture2D tex, int val, int np)
         {
             this.coberta = true;
             this.linha = 0;
